@@ -15,7 +15,7 @@ public partial class playerController : CharacterBody2D
 	private int money {get; set;} = 0;
 	
 	[Export]
-	private float friction {get; set;} = 0.1f;
+	private float friction {get; set;} = 0.4f;
 	
 	
 	public override void _Ready()
