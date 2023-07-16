@@ -1,9 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://br6vtxpb0ldm2"]
+[gd_scene load_steps=3 format=3 uid="uid://br6vtxpb0ldm2"]
 
 [ext_resource type="PackedScene" uid="uid://b3n8k6r4aqvlk" path="res://Prefabs/player.tscn" id="1_fntbk"]
+[ext_resource type="PackedScene" uid="uid://de01s11wvif46" path="res://Prefabs/TileMap.tscn" id="2_ur2i0"]
 
 [node name="MainScene" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_fntbk")]
 position = Vector2(224, 229)
 scale = Vector2(0.25, 0.25)
+friction = 0.2
+
+[node name="TileMap" parent="." instance=ExtResource("2_ur2i0")]
+position = Vector2(400, 300)
+scale = Vector2(2, 2)
