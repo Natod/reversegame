@@ -17,6 +17,7 @@ public partial class playerController : CharacterBody2D
 	[Export]
 	private float friction {get; set;} = 0.4f;
 	
+	Vector2 velocity = Input.GetVector("in_left", "in_right", "in_up", "in_down");
 	
 	public override void _Ready()
 	{
@@ -26,15 +27,15 @@ public partial class playerController : CharacterBody2D
 	public override void _PhysicsProcess(double delta)
 	{
 		
-		var velocity = Velocity;
+		velocity = Velocity;
 		velocity.X *= 1f-friction;
 		velocity.Y *= 1f-friction;
 
-		if (Input.IsActionPressed("ui_left") && !Input.IsActionPressed("ui_right"))
+		if (Input.IsActionPressed("in_left") && !Input.IsActionPressed("in_right"))
 		{
 			velocity.X = -moveSpeed;
 		}
-		else if (Input.IsActionPressed("ui_right") && !Input.IsActionPressed("ui_left"))
+		else if (Input.IsActionPressed("in_right") && !Input.IsActionPressed("in_left"))
 		{
 			velocity.X = moveSpeed;
 		}
@@ -43,11 +44,11 @@ public partial class playerController : CharacterBody2D
 			// velocity.X = 0;
 		}
 		
-		if (Input.IsActionPressed("ui_up") && !Input.IsActionPressed("ui_down"))
+		if (Input.IsActionPressed("in_up") && !Input.IsActionPressed("in_down"))
 		{
 			velocity.Y = -moveSpeed;
 		}
-		else if (Input.IsActionPressed("ui_down") && !Input.IsActionPressed("ui_up"))
+		else if (Input.IsActionPressed("in_down") && !Input.IsActionPressed("in_up"))
 		{
 			velocity.Y = moveSpeed;
 		}
@@ -57,7 +58,7 @@ public partial class playerController : CharacterBody2D
 		}
 		
 
-		Velocity = velocity;
+		Velocity += velocity;
 
 		// "MoveAndSlide" already takes delta time into account.
 		MoveAndSlide();
