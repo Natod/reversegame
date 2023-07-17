@@ -1,9 +1,19 @@
-[gd_scene load_steps=4 format=3 uid="uid://b3n8k6r4aqvlk"]
+[gd_scene load_steps=8 format=3 uid="uid://b3n8k6r4aqvlk"]
 
 [ext_resource type="Script" path="res://Scripts/playerController.cs" id="1_bqjmf"]
 [ext_resource type="Texture2D" uid="uid://c0hakvrii1ma6" path="res://Sprites/shirtless sunburnt man.svg" id="2_ru4l6"]
+[ext_resource type="Texture2D" uid="uid://bsvpwbrppeucr" path="res://Sprites/sunburn arm.svg" id="3_3s7fq"]
+[ext_resource type="Texture2D" uid="uid://cno58yxowsyff" path="res://Sprites/HAND.svg" id="4_vwql6"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_gweiq"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_kvthx"]
+
+[sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_vr4lm"]
+graph_offset = Vector2(-236.909, 73.6364)
+nodes/Animation/node = SubResource("AnimationNodeAnimation_kvthx")
+nodes/Animation/position = Vector2(100, 140)
+node_connections = [&"output", 0, &"Animation"]
 
 [node name="Player" type="CharacterBody2D"]
 motion_mode = 1
@@ -16,7 +26,61 @@ shape = SubResource("CircleShape2D_gweiq")
 [node name="RayCast2D" type="RayCast2D" parent="."]
 
 [node name="ShirtlessSunburntMan" type="Sprite2D" parent="."]
+z_index = 1
 position = Vector2(12, -5.45697e-12)
 rotation = 3.14159
 scale = Vector2(0.706036, 0.706036)
 texture = ExtResource("2_ru4l6")
+
+[node name="Arm" type="Node2D" parent="."]
+
+[node name="Skeleton2D" type="Skeleton2D" parent="Arm"]
+
+[node name="armbone" type="Bone2D" parent="Arm/Skeleton2D"]
+position = Vector2(0.01, -80.16)
+rotation = -0.05236
+scale = Vector2(8.83999, 8.83999)
+rest = Transform2D(8.82788, -0.46265, 0.46265, 8.82788, 0.01, -80.16)
+
+[node name="forearmbone" type="Bone2D" parent="Arm/Skeleton2D/armbone"]
+position = Vector2(9.575, 0)
+rotation = 0.785397
+scale = Vector2(0.41, 0.41)
+rest = Transform2D(0.41, 0, 0, 0.41, 9.575, 0)
+
+[node name="handbone" type="Bone2D" parent="Arm/Skeleton2D/armbone/forearmbone"]
+position = Vector2(15.925, 0)
+rotation = 0.0349066
+scale = Vector2(0.365, 0.365)
+rest = Transform2D(0.364778, 0.0127383, -0.0127383, 0.364778, 15.925, 0)
+
+[node name="PolygonHand" type="Polygon2D" parent="Arm"]
+position = Vector2(141, -87)
+rotation = 3.14159
+scale = Vector2(0.799824, 0.799824)
+offset = Vector2(-408, -383)
+texture = ExtResource("4_vwql6")
+skeleton = NodePath("../Skeleton2D")
+polygon = PackedVector2Array(377.671, 341.827, 426.718, 365.636, 425.766, 399.922, 388.623, 408.97, 363.861, 414.208, 342.909, 410.398, 329.099, 396.112, 327.194, 367.065, 338.623, 355.16, 359.099, 357.541, 351.956, 344.684)
+uv = PackedVector2Array(377.671, 341.827, 426.718, 365.636, 425.766, 399.922, 388.623, 408.97, 363.861, 414.208, 342.909, 410.398, 329.099, 396.112, 327.194, 367.065, 338.623, 355.16, 359.099, 357.541, 351.956, 344.684)
+bones = ["armbone", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "armbone/forearmbone", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "armbone/forearmbone/handbone", PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)]
+
+[node name="PolygonArm" type="Polygon2D" parent="Arm"]
+position = Vector2(1.19209e-07, -81)
+rotation = -3.14159
+scale = Vector2(0.944902, 0.925596)
+offset = Vector2(-265, -186)
+texture = ExtResource("3_3s7fq")
+skeleton = NodePath("../Skeleton2D")
+polygon = PackedVector2Array(149.074, 166.204, 171.759, 165.741, 182.87, 165.741, 195.37, 164.815, 207.407, 164.352, 228.241, 162.963, 245.833, 158.333, 269.444, 158.796, 285.648, 168.981, 288.426, 192.593, 282.87, 207.407, 263.889, 212.963, 240.278, 216.204, 229.167, 218.056, 216.667, 219.444, 198.611, 219.907, 182.87, 219.907, 168.981, 219.907, 150, 218.519, 121.759, 215.278, 94.9074, 207.87, 88.8889, 189.815, 103.704, 175.463, 121.296, 171.296, 186.641, 189.313, 199.618, 183.206, 211.45, 192.366)
+uv = PackedVector2Array(149.074, 166.204, 171.759, 165.741, 182.87, 165.741, 195.37, 164.815, 207.407, 164.352, 228.241, 162.963, 245.833, 158.333, 269.444, 158.796, 285.648, 168.981, 288.426, 192.593, 282.87, 207.407, 263.889, 212.963, 240.278, 216.204, 229.167, 218.056, 216.667, 219.444, 198.611, 219.907, 182.87, 219.907, 168.981, 219.907, 150, 218.519, 121.759, 215.278, 94.9074, 207.87, 88.8889, 189.815, 103.704, 175.463, 121.296, 171.296, 186.641, 189.313, 199.618, 183.206, 211.45, 192.366)
+polygons = [PackedInt32Array(22, 19, 20, 21), PackedInt32Array(23, 19, 22), PackedInt32Array(23, 18, 19), PackedInt32Array(0, 23, 18), PackedInt32Array(1, 17, 18, 0), PackedInt32Array(1, 24, 17), PackedInt32Array(1, 2, 24), PackedInt32Array(2, 3, 24), PackedInt32Array(3, 25, 24), PackedInt32Array(3, 4, 25), PackedInt32Array(25, 26, 4), PackedInt32Array(26, 5, 4), PackedInt32Array(16, 24, 17), PackedInt32Array(15, 16, 24), PackedInt32Array(26, 24, 25), PackedInt32Array(26, 14, 24), PackedInt32Array(14, 15, 24), PackedInt32Array(13, 26, 14), PackedInt32Array(12, 5, 26, 13), PackedInt32Array(11, 6, 5, 12), PackedInt32Array(10, 11, 6, 7), PackedInt32Array(9, 8, 7, 10)]
+bones = ["armbone", PackedFloat32Array(0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1), "armbone/forearmbone", PackedFloat32Array(1, 0.24, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0), "armbone/forearmbone/handbone", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)]
+internal_vertex_count = 3
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource("AnimationNodeBlendTree_vr4lm")
+anim_player = NodePath("../AnimationPlayer")
+active = true

@@ -31,29 +31,14 @@ public partial class playerController : CharacterBody2D
 		Vector2 velocity = Velocity;
 		velocity.X *= 1f-friction;
 		velocity.Y *= 1f-friction;
-
-		if (Input.IsActionPressed("in_left") && !Input.IsActionPressed("in_right"))
+		if (!(Input.GetVector("in_left", "in_right", "in_up", "in_down").X == 0 && Input.GetVector("in_left", "in_right", "in_up", "in_down").Y == 0))
 		{
-			velocity.X = -moveSpeed;
-			RotationLerp(Mathf.Pi, delta);
+			velocity = Input.GetVector("in_left", "in_right", "in_up", "in_down") * moveSpeed;
 		}
-		else if (Input.IsActionPressed("in_right") && !Input.IsActionPressed("in_left"))
+		if (!(velocity.X == 0 && velocity.Y == 0))
 		{
-			velocity.X = moveSpeed;
-			RotationLerp(0, delta);
-		}
-		
-		if (Input.IsActionPressed("in_up") && !Input.IsActionPressed("in_down"))
-		{
-			velocity.Y = -moveSpeed;
-			RotationLerp(Mathf.Pi*3/2, delta);
-		}
-		else if (Input.IsActionPressed("in_down") && !Input.IsActionPressed("in_up"))
-		{
-			velocity.Y = moveSpeed;
-			RotationLerp(Mathf.Pi/2, delta);
-		}
-		
+			RotationLerp(velocity.Angle());
+		}	
 
 		Velocity = velocity;
 
@@ -61,7 +46,7 @@ public partial class playerController : CharacterBody2D
 		MoveAndSlide();
 	}
 	
-	public void RotationLerp(float newAngle, double delta)
+	public void RotationLerp(float newAngle)
 	{
 		Rotation = Mathf.LerpAngle(Rotation, newAngle, 0.35f);
 	}
