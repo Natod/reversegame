@@ -1,0 +1,55 @@
+[gd_scene load_steps=4 format=3 uid="uid://dfemei3v7jq4b"]
+
+[ext_resource type="Texture2D" uid="uid://cno58yxowsyff" path="res://Sprites/HAND.svg" id="1_dhe34"]
+[ext_resource type="Script" path="res://Scripts/enemyController.cs" id="1_tf2wg"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vtkyy"]
+radius = 18.0
+height = 74.0
+
+[node name="enemyHand" type="CharacterBody2D"]
+script = ExtResource("1_tf2wg")
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+position = Vector2(0, -1)
+rotation = 1.5708
+offset = Vector2(-380, -379)
+texture = ExtResource("1_dhe34")
+skeleton = NodePath("../Skeleton2D")
+polygon = PackedVector2Array(361.198, 358.854, 354.688, 359.896, 347.656, 361.198, 339.844, 360.677, 333.333, 365.625, 329.427, 371.615, 330.208, 384.375, 330.729, 391.667, 332.813, 398.958, 338.021, 405.469, 344.01, 411.198, 355.729, 413.802, 368.75, 411.979, 383.073, 410.938, 393.229, 408.333, 406.25, 406.51, 414.583, 404.688, 421.354, 402.604, 426.302, 399.479, 427.865, 392.188, 426.302, 386.719, 425.26, 377.083, 424.479, 369.271, 417.708, 364.583, 410.938, 361.198, 400.521, 356.51, 393.229, 351.302, 384.115, 347.135, 376.823, 343.75, 365.104, 344.01, 359.375, 346.094, 356.771, 351.302, 358.073, 355.469, 371.121, 362.931, 380.819, 366.595, 393.966, 370.043, 340.517, 375, 351.509, 374.785, 362.069, 374.569, 343.535, 390.517, 354.957, 388.578, 364.224, 388.362, 377.586, 387.285, 370.474, 374.785, 350.216, 401.509, 359.914, 400, 370.474, 397.198, 382.974, 395.905)
+uv = PackedVector2Array(361.198, 358.854, 354.688, 359.896, 347.656, 361.198, 339.844, 360.677, 333.333, 365.625, 329.427, 371.615, 330.208, 384.375, 330.729, 391.667, 332.813, 398.958, 338.021, 405.469, 344.01, 411.198, 355.729, 413.802, 368.75, 411.979, 383.073, 410.938, 393.229, 408.333, 406.25, 406.51, 414.583, 404.688, 421.354, 402.604, 426.302, 399.479, 427.865, 392.188, 426.302, 386.719, 425.26, 377.083, 424.479, 369.271, 417.708, 364.583, 410.938, 361.198, 400.521, 356.51, 393.229, 351.302, 384.115, 347.135, 376.823, 343.75, 365.104, 344.01, 359.375, 346.094, 356.771, 351.302, 358.073, 355.469, 371.121, 362.931, 380.819, 366.595, 393.966, 370.043, 340.517, 375, 351.509, 374.785, 362.069, 374.569, 343.535, 390.517, 354.957, 388.578, 364.224, 388.362, 377.586, 387.285, 370.474, 374.785, 350.216, 401.509, 359.914, 400, 370.474, 397.198, 382.974, 395.905)
+polygons = [PackedInt32Array(4, 36, 5), PackedInt32Array(3, 4, 36), PackedInt32Array(3, 2, 37, 36), PackedInt32Array(2, 1, 38, 37), PackedInt32Array(1, 0, 43, 38), PackedInt32Array(0, 33, 43), PackedInt32Array(29, 0, 32, 31, 30), PackedInt32Array(29, 28, 33, 0), PackedInt32Array(28, 27, 34, 33), PackedInt32Array(34, 26, 27), PackedInt32Array(34, 35, 26), PackedInt32Array(35, 25, 26), PackedInt32Array(35, 21, 22, 23, 24, 25), PackedInt32Array(43, 42, 34), PackedInt32Array(33, 43, 34), PackedInt32Array(34, 35, 42), PackedInt32Array(35, 21, 20, 19), PackedInt32Array(35, 15, 16, 17, 18, 19), PackedInt32Array(47, 35, 15, 14), PackedInt32Array(47, 42, 35), PackedInt32Array(47, 13, 14), PackedInt32Array(42, 46, 47), PackedInt32Array(41, 42, 43), PackedInt32Array(41, 38, 43), PackedInt32Array(41, 38, 40), PackedInt32Array(40, 38, 37), PackedInt32Array(40, 39, 37), PackedInt32Array(39, 36, 37), PackedInt32Array(36, 5, 6, 39), PackedInt32Array(6, 7, 8, 39), PackedInt32Array(39, 44, 40), PackedInt32Array(44, 45, 40), PackedInt32Array(45, 41, 40), PackedInt32Array(45, 46, 41), PackedInt32Array(46, 42, 41), PackedInt32Array(46, 12, 13, 47), PackedInt32Array(46, 45, 12), PackedInt32Array(45, 11, 12), PackedInt32Array(44, 11, 45), PackedInt32Array(44, 10, 11), PackedInt32Array(44, 9, 39), PackedInt32Array(10, 9, 44), PackedInt32Array(9, 39, 8)]
+bones = ["wristbone", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.19, 0.19, 0.95, 1, 1, 1, 1, 1, 1, 1, 0.95, 0.38, 0.38, 0, 0, 0, 0, 0, 0, 0, 0, 0.38, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "wristbone/fingerbone1", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0.95, 0.95, 0.76, 0.38, 0, 0.19, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0.81, 0.38), "wristbone/fingerbone2", PackedFloat32Array(0, 0, 0, 0, 0, 0, 1, 1, 0.76, 0.38, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.38, 0.38, 0.19, 1, 1, 1, 0.57, 0, 0.19, 0.19, 0, 0), "wristbone/fingerbone3", PackedFloat32Array(0.38, 1, 1, 1, 1, 1, 0.38, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.19, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0.57, 0, 0, 0, 0), "wristbone/fingerbone4", PackedFloat32Array(1, 0.19, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.19, 0.38, 0.57, 1, 1, 1, 1, 1, 1, 1, 1, 0.95, 0.57, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)]
+internal_vertex_count = 15
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_vtkyy")
+
+[node name="Skeleton2D" type="Skeleton2D" parent="."]
+position = Vector2(-2.67, 32.825)
+rotation = 4.66701
+
+[node name="wristbone" type="Bone2D" parent="Skeleton2D"]
+rest = Transform2D(1, 0, 0, 1, 0, 0)
+
+[node name="fingerbone1" type="Bone2D" parent="Skeleton2D/wristbone"]
+position = Vector2(36.34, -12.475)
+rotation = -0.120428
+scale = Vector2(2.2, 2.2)
+rest = Transform2D(2.18407, -0.264301, 0.264301, 2.18407, 36.34, -12.475)
+
+[node name="fingerbone2" type="Bone2D" parent="Skeleton2D/wristbone"]
+position = Vector2(37.28, 0.04)
+scale = Vector2(2.385, 2.385)
+rest = Transform2D(2.385, 0, 0, 2.385, 37.28, 0.04)
+
+[node name="fingerbone3" type="Bone2D" parent="Skeleton2D/wristbone"]
+position = Vector2(39.22, 13.055)
+rotation = 0.120428
+scale = Vector2(2.015, 2.015)
+rest = Transform2D(2.00041, 0.242076, -0.242076, 2.00041, 39.22, 13.055)
+
+[node name="fingerbone4" type="Bone2D" parent="Skeleton2D/wristbone"]
+position = Vector2(31.21, 25.28)
+rotation = 0.523599
+rest = Transform2D(0.932954, 0.359997, -0.359997, 0.932954, 31.21, 25.28)
