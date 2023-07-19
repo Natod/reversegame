@@ -14,7 +14,7 @@ friction = 0.2
 
 [node name="TileMap" parent="." instance=ExtResource("2_ur2i0")]
 position = Vector2(400, 300)
-scale = Vector2(0.28, 0.28)
+scale = Vector2(0.395, 0.395)
 
 [node name="enemyHand" parent="." instance=ExtResource("3_f5si5")]
 position = Vector2(970, 214)
@@ -26,4 +26,5 @@ scale = Vector2(2.565, 2.565)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(487, 390)
-zoom = Vector2(1.52, 1.52)
+offset = Vector2(77.36, 0)
+zoom = Vector2(1.23, 1.23)
