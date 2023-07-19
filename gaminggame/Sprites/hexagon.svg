@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="200mm"
+   width="173.205mm"
    height="200mm"
-   viewBox="0 0 200 200"
+   viewBox="0 0 173.205 200"
    version="1.1"
    id="svg5"
    inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
@@ -25,8 +25,8 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="0.90509668"
-     inkscape:cx="683.35242"
-     inkscape:cy="325.37961"
+     inkscape:cx="355.21067"
+     inkscape:cy="378.41261"
      inkscape:window-width="2560"
      inkscape:window-height="1411"
      inkscape:window-x="-9"
@@ -49,7 +49,7 @@
        inkscape:tile-y0="15.78147">
       <path
          sodipodi:type="star"
-         style="fill:#808080;stroke:#666666;stroke-width:3.14086354;stroke-dasharray:none;stroke-linecap:butt"
+         style="fill:#808080;stroke:#666666;stroke-width:3.14086;stroke-linecap:butt;stroke-dasharray:none"
          id="path288"
          inkscape:flatsided="true"
          sodipodi:sides="6"
@@ -62,18 +62,18 @@
          inkscape:rounded="0"
          inkscape:randomized="0"
          d="M 0,99.999995 50.000004,13.397457 150,13.397462 200,100 l -50,86.60254 -100.000004,0 z"
-         inkscape:transform-center-x="1.1598425e-06"
-         inkscape:transform-center-y="-1.1598425e-06"
-         transform="matrix(0.95515128,0,0,0.95515128,4.4848721,4.4848721)"
+         transform="matrix(0,0.98218919,-0.98218919,0,184.82143,1.781084)"
          inkscape:tile-cx="100"
          inkscape:tile-cy="100"
          inkscape:tile-w="194.49436"
          inkscape:tile-h="168.43706"
          inkscape:tile-x0="2.7528213"
-         inkscape:tile-y0="15.78147" />
+         inkscape:tile-y0="15.78147"
+         inkscape:transform-center-x="-3.7629817e-06"
+         inkscape:transform-center-y="-1.9808511e-06" />
       <path
          sodipodi:type="star"
-         style="fill:#808080;stroke:#666666;stroke-width:9.64372015;stroke-linecap:butt;stroke-dasharray:none"
+         style="fill:#808080;stroke:#666666;stroke-width:9.64372;stroke-linecap:butt;stroke-dasharray:none"
          id="use28571"
          inkscape:flatsided="true"
          sodipodi:sides="6"
@@ -86,14 +86,14 @@
          inkscape:rounded="0"
          inkscape:randomized="0"
          d="M 0,99.999995 50.000004,13.397457 150,13.397462 200,100 l -50,86.60254 -100.000004,0 z"
-         inkscape:transform-center-x="1.1598425e-06"
-         inkscape:transform-center-y="-1.1598425e-06"
-         transform="matrix(0.31108327,0,0,0.31108327,68.891673,14.033398)"
+         transform="matrix(0,0.31988925,-0.31988925,0,175.00261,68.011075)"
          inkscape:tile-x0="2.7528213"
-         inkscape:tile-y0="15.78147" />
+         inkscape:tile-y0="15.78147"
+         inkscape:transform-center-x="-3.3639301e-06"
+         inkscape:transform-center-y="-5.1865127e-06" />
       <path
          sodipodi:type="star"
-         style="fill:#808080;stroke:#666666;stroke-width:9.64372015;stroke-linecap:butt;stroke-dasharray:none"
+         style="fill:#808080;stroke:#666666;stroke-width:9.64372;stroke-linecap:butt;stroke-dasharray:none"
          id="use28573"
          inkscape:flatsided="true"
          sodipodi:sides="6"
@@ -106,14 +106,12 @@
          inkscape:rounded="0"
          inkscape:randomized="0"
          d="M 0,99.999995 50.000004,13.397457 150,13.397462 200,100 l -50,86.60254 -100.000004,0 z"
-         inkscape:transform-center-x="1.1598425e-06"
-         inkscape:transform-center-y="-1.1598425e-06"
-         transform="matrix(0.31108327,0,0,0.31108327,21.383023,41.462538)"
+         transform="matrix(0,0.31988925,-0.31988925,0,146.79702,19.15758)"
          inkscape:tile-x0="2.7528213"
          inkscape:tile-y0="15.78147" />
       <path
          sodipodi:type="star"
-         style="fill:#808080;stroke:#666666;stroke-width:9.64372015;stroke-linecap:butt;stroke-dasharray:none"
+         style="fill:#808080;stroke:#666666;stroke-width:9.64372;stroke-linecap:butt;stroke-dasharray:none"
          id="use28593"
          inkscape:flatsided="true"
          sodipodi:sides="6"
@@ -126,14 +124,14 @@
          inkscape:rounded="0"
          inkscape:randomized="0"
          d="M 0,99.999995 50.000004,13.397457 150,13.397462 200,100 l -50,86.60254 -100.000004,0 z"
-         inkscape:transform-center-x="1.1598425e-06"
-         inkscape:transform-center-y="-1.1598425e-06"
-         transform="matrix(0.31108327,0,0,0.31108327,116.40033,41.462538)"
+         transform="matrix(0,0.31988925,-0.31988925,0,146.79702,116.86459)"
          inkscape:tile-x0="2.7528213"
-         inkscape:tile-y0="15.78147" />
+         inkscape:tile-y0="15.78147"
+         inkscape:transform-center-x="-1.4151511e-06"
+         inkscape:transform-center-y="-2.9315302e-06" />
       <path
          sodipodi:type="star"
-         style="fill:#808080;stroke:#666666;stroke-width:9.64372015;stroke-linecap:butt;stroke-dasharray:none"
+         style="fill:#808080;stroke:#666666;stroke-width:9.64372;stroke-linecap:butt;stroke-dasharray:none"
          id="use28595"
          inkscape:flatsided="true"
          sodipodi:sides="6"
@@ -146,14 +144,14 @@
          inkscape:rounded="0"
          inkscape:randomized="0"
          d="M 0,99.999995 50.000004,13.397457 150,13.397462 200,100 l -50,86.60254 -100.000004,0 z"
-         inkscape:transform-center-x="1.1598425e-06"
-         inkscape:transform-center-y="-1.1598425e-06"
-         transform="matrix(0.31108327,0,0,0.31108327,68.891673,68.891673)"
+         transform="matrix(0,0.31988925,-0.31988925,0,118.59143,68.011075)"
          inkscape:tile-x0="2.7528213"
-         inkscape:tile-y0="15.78147" />
+         inkscape:tile-y0="15.78147"
+         inkscape:transform-center-x="3.2653258e-06"
+         inkscape:transform-center-y="-5.1865127e-06" />
       <path
          sodipodi:type="star"
-         style="fill:#808080;stroke:#666666;stroke-width:9.64372015;stroke-linecap:butt;stroke-dasharray:none"
+         style="fill:#808080;stroke:#666666;stroke-width:9.64372;stroke-linecap:butt;stroke-dasharray:none"
          id="use28597"
          inkscape:flatsided="true"
          sodipodi:sides="6"
@@ -166,14 +164,12 @@
          inkscape:rounded="0"
          inkscape:randomized="0"
          d="M 0,99.999995 50.000004,13.397457 150,13.397462 200,100 l -50,86.60254 -100.000004,0 z"
-         inkscape:transform-center-x="1.1598425e-06"
-         inkscape:transform-center-y="-1.1598425e-06"
-         transform="matrix(0.31108327,0,0,0.31108327,21.383023,96.320813)"
+         transform="matrix(0,0.31988925,-0.31988925,0,90.385836,19.15758)"
          inkscape:tile-x0="2.7528213"
          inkscape:tile-y0="15.78147" />
       <path
          sodipodi:type="star"
-         style="fill:#808080;stroke:#666666;stroke-width:9.64372015;stroke-linecap:butt;stroke-dasharray:none"
+         style="fill:#808080;stroke:#666666;stroke-width:9.64372;stroke-linecap:butt;stroke-dasharray:none"
          id="use28617"
          inkscape:flatsided="true"
          sodipodi:sides="6"
@@ -186,14 +182,14 @@
          inkscape:rounded="0"
          inkscape:randomized="0"
          d="M 0,99.999995 50.000004,13.397457 150,13.397462 200,100 l -50,86.60254 -100.000004,0 z"
-         inkscape:transform-center-x="1.1598425e-06"
-         inkscape:transform-center-y="-1.1598425e-06"
-         transform="matrix(0.31108327,0,0,0.31108327,116.40033,96.320813)"
+         transform="matrix(0,0.31988925,-0.31988925,0,90.385836,116.86459)"
          inkscape:tile-x0="2.7528213"
-         inkscape:tile-y0="15.78147" />
+         inkscape:tile-y0="15.78147"
+         inkscape:transform-center-x="4.5848489e-06"
+         inkscape:transform-center-y="-2.9315302e-06" />
       <path
          sodipodi:type="star"
-         style="fill:#808080;stroke:#666666;stroke-width:9.64372015;stroke-linecap:butt;stroke-dasharray:none"
+         style="fill:#808080;stroke:#666666;stroke-width:9.64372;stroke-linecap:butt;stroke-dasharray:none"
          id="use28619"
          inkscape:flatsided="true"
          sodipodi:sides="6"
@@ -206,11 +202,11 @@
          inkscape:rounded="0"
          inkscape:randomized="0"
          d="M 0,99.999995 50.000004,13.397457 150,13.397462 200,100 l -50,86.60254 -100.000004,0 z"
-         inkscape:transform-center-x="1.1598425e-06"
-         inkscape:transform-center-y="-1.1598425e-06"
-         transform="matrix(0.31108327,0,0,0.31108327,68.891673,123.74995)"
+         transform="matrix(0,0.31988925,-0.31988925,0,62.180256,68.011075)"
          inkscape:tile-x0="2.7528213"
-         inkscape:tile-y0="15.78147" />
+         inkscape:tile-y0="15.78147"
+         inkscape:transform-center-y="-5.1865127e-06"
+         inkscape:transform-center-x="-3.6016638e-06" />
     </g>
   </g>
 </svg>

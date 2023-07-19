@@ -14,7 +14,7 @@ friction = 0.2
 
 [node name="TileMap" parent="." instance=ExtResource("2_ur2i0")]
 position = Vector2(400, 300)
-scale = Vector2(2, 2)
+scale = Vector2(0.28, 0.28)
 
 [node name="enemyHand" parent="." instance=ExtResource("3_f5si5")]
 position = Vector2(970, 214)
