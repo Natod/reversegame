@@ -18,13 +18,15 @@ script = ExtResource("3_0qb6t")
 shape = SubResource("CircleShape2D_4pqdq")
 
 [node name="XboxOneB" type="Sprite2D" parent="PickupRadius"]
-z_index = 2
+z_index = 4
 position = Vector2(0, 8)
 scale = Vector2(0.12, 0.12)
 texture = ExtResource("2_cednp")
 
 [node name="Highlight2" type="Polygon2D" parent="PickupRadius/XboxOneB"]
 show_behind_parent = true
+z_index = -4
+z_as_relative = false
 position = Vector2(0, -66.6667)
 scale = Vector2(8.33333, 8.33333)
 color = Color(0, 0.72549, 0.941176, 0.258824)
@@ -35,6 +37,8 @@ rotSpeed = 75.0
 
 [node name="Highlight2" type="Polygon2D" parent="PickupRadius/XboxOneB/Highlight2"]
 show_behind_parent = true
+z_index = -4
+z_as_relative = false
 scale = Vector2(0.9, 0.9)
 color = Color(0, 0.72549, 0.941176, 0.258824)
 antialiased = true

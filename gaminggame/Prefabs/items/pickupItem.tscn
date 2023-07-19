@@ -38,4 +38,4 @@ offset = Vector2(10, 10)
 [node name="ShineAnimation" type="AnimatedSprite2D" parent="."]
 
 [node name="itemHighlight" parent="." instance=ExtResource("3_kxd2q")]
-z_index = -2
+z_index = -4

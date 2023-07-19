@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://ckwmosmmkf4an"]
+
+[ext_resource type="Texture2D" uid="uid://cg0lgx637q5fi" path="res://Sprites/diamond dagger.svg" id="1_iq1xm"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_dl4cv"]
+
+[node name="heldItem" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+physics_material_override = SubResource("PhysicsMaterial_dl4cv")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(-18, 33, -22, -65, -17, -173, 2, -220, 20, -186, 17, 32, -1, 35)
+
+[node name="DiamondDagger" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(-1, -87)
+texture = ExtResource("1_iq1xm")
