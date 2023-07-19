@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://br6vtxpb0ldm2"]
+[gd_scene load_steps=5 format=3 uid="uid://br6vtxpb0ldm2"]
 
 [ext_resource type="PackedScene" uid="uid://b3n8k6r4aqvlk" path="res://Prefabs/player.tscn" id="1_fntbk"]
 [ext_resource type="PackedScene" uid="uid://de01s11wvif46" path="res://Prefabs/TileMap.tscn" id="2_ur2i0"]
+[ext_resource type="PackedScene" uid="uid://dfemei3v7jq4b" path="res://Prefabs/enemies/enemyHand.tscn" id="3_f5si5"]
+[ext_resource type="PackedScene" uid="uid://dwh6rxcakyk36" path="res://Prefabs/items/pickupItem.tscn" id="4_dndu7"]
 
 [node name="MainScene" type="Node2D"]
 
@@ -13,3 +15,15 @@ friction = 0.2
 [node name="TileMap" parent="." instance=ExtResource("2_ur2i0")]
 position = Vector2(400, 300)
 scale = Vector2(2, 2)
+
+[node name="enemyHand" parent="." instance=ExtResource("3_f5si5")]
+position = Vector2(970, 214)
+rotation = -2.87979
+
+[node name="pickupItem" parent="." instance=ExtResource("4_dndu7")]
+position = Vector2(641, 189)
+scale = Vector2(2.565, 2.565)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(487, 390)
+zoom = Vector2(1.52, 1.52)

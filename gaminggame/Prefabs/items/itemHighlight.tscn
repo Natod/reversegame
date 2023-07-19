@@ -1,0 +1,63 @@
+[gd_scene load_steps=5 format=3 uid="uid://bpu6kplhkfyf4"]
+
+[ext_resource type="Script" path="res://Scripts/fx/itemHighlightOnFloor.cs" id="1_5ba48"]
+[ext_resource type="Texture2D" uid="uid://djblxl5pvryil" path="res://Sprites/XboxOne_B.png" id="2_cednp"]
+[ext_resource type="Script" path="res://Scripts/fx/itemHighlightPrompt.cs" id="3_0qb6t"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4pqdq"]
+radius = 19.0263
+
+[node name="itemHighlight" type="Node2D"]
+
+[node name="PickupRadius" type="Area2D" parent="."]
+position = Vector2(0, 4.76837e-07)
+scale = Vector2(1, 1)
+script = ExtResource("3_0qb6t")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PickupRadius"]
+shape = SubResource("CircleShape2D_4pqdq")
+
+[node name="XboxOneB" type="Sprite2D" parent="PickupRadius"]
+z_index = 2
+position = Vector2(0, 8)
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("2_cednp")
+
+[node name="Highlight2" type="Polygon2D" parent="PickupRadius/XboxOneB"]
+show_behind_parent = true
+position = Vector2(0, -66.6667)
+scale = Vector2(8.33333, 8.33333)
+color = Color(0, 0.72549, 0.941176, 0.258824)
+antialiased = true
+polygon = PackedVector2Array(10, 0, 7, -7, 0, -10, -7, -7, -10, 0, -7, 7, 0, 10, 7, 7)
+script = ExtResource("1_5ba48")
+rotSpeed = 75.0
+
+[node name="Highlight2" type="Polygon2D" parent="PickupRadius/XboxOneB/Highlight2"]
+show_behind_parent = true
+scale = Vector2(0.9, 0.9)
+color = Color(0, 0.72549, 0.941176, 0.258824)
+antialiased = true
+polygon = PackedVector2Array(10, 0, 7, -7, 0, -10, -7, -7, -10, 0, -7, 7, 0, 10, 7, 7)
+script = ExtResource("1_5ba48")
+rotSpeed = 285.0
+
+[node name="Highlight" type="Polygon2D" parent="PickupRadius"]
+visible = false
+show_behind_parent = true
+position = Vector2(0, -4.76837e-07)
+color = Color(0, 0.72549, 0.941176, 0.258824)
+antialiased = true
+polygon = PackedVector2Array(10, 0, 9, -4, 7, -7, 4, -9, 0, -10, -4, -9, -7, -7, -9, -4, -10, 0, -9, 4, -7, 7, -4, 9, 0, 10, 4, 9, 7, 7, 9, 4)
+
+[node name="Highlight" type="Polygon2D" parent="PickupRadius/Highlight"]
+visible = false
+show_behind_parent = true
+scale = Vector2(0.92, 0.92)
+color = Color(0, 0.72549, 0.941176, 0.258824)
+antialiased = true
+invert_border = 4.0
+polygon = PackedVector2Array(10, 0, 9, -4, 7, -7, 4, -9, 0, -10, -4, -9, -7, -7, -9, -4, -10, 0, -9, 4, -7, 7, -4, 9, 0, 10, 4, 9, 7, 7, 9, 4)
+
+[connection signal="body_entered" from="PickupRadius" to="PickupRadius" method="_on_body_entered"]
+[connection signal="body_exited" from="PickupRadius" to="PickupRadius" method="_on_body_exited"]
