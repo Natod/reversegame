@@ -52,4 +52,11 @@ public partial class playerController : CharacterBody2D
 	{
 		Rotation = Mathf.LerpAngle(Rotation, newAngle, 0.35f);
 	}
+	
+	private void GetHurt(int damageTaken)
+	{
+		hp -= damageTaken;
+		Modulate = new Color(1, 0.65f, 0.65f, 1);
+	}
+	
 }

@@ -13,6 +13,13 @@ public partial class itemHighlightOnFloor : Node2D
 
 	public override void _Process(double delta)
 	{
-		RotationDegrees += (float)(rotSpeed * delta);
+		if (rotSpeed < 0)
+		{
+			RotationDegrees += (float)(Mathf.Abs(rotSpeed) * delta);
+		}
+		else
+		{
+			RotationDegrees += (float)(rotSpeed * delta);
+		}
 	}
 }
